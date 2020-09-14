@@ -3,28 +3,24 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MyTests {
+
     @Test
-    public void testBabylonian() {
-        assertEquals(Math.sqrt(100), MyMain.babylonian(100), 0.01, "The square root of 100 should be: " + Math.sqrt(100));
-        assertEquals(Math.sqrt(50.5), MyMain.babylonian(50.5), 0.01, "The square root of 50.5 should be: " + Math.sqrt(50.5));
-        assertEquals(Math.sqrt(20.4), MyMain.babylonian(20.4), 0.01, "The square root of 20.4 should be: " + Math.sqrt(20.4));
-        assertEquals(Math.sqrt(5.2), MyMain.babylonian(5.2), 0.01, "The square root of 5.2 should be: " + Math.sqrt(5.2));
-        assertEquals(Math.sqrt(1192), MyMain.babylonian(1192), 0.01, "The square root of 1192 should be: " + Math.sqrt(1992));
-        assertEquals(Math.sqrt(17), MyMain.babylonian(17), 0.01, "The square root of 17 should be: " + Math.sqrt(17));
+    public void testEasy() {
+        assertEquals(1, MyMain.binaryToDecimal("1"), "The decimal value of \"1\" should be: " + 1);
+        assertEquals(2, MyMain.binaryToDecimal("10"), "The decimal value of \"10\" should be: " + 2);
+        assertEquals(3, MyMain.binaryToDecimal("11"), "The decimal value of \"11\" should be: " + 3);
+        assertEquals(4, MyMain.binaryToDecimal("100"), "The decimal value of \"100\" should be: " + 4);
+        assertEquals(5, MyMain.binaryToDecimal("101"), "The decimal value of \"101\" should be: " + 5);
+        assertEquals(6, MyMain.binaryToDecimal("110"), "The decimal value of \"110\" should be: " + 6);
+        assertEquals(7, MyMain.binaryToDecimal("111"), "The decimal value of \"111\" should be: " + 7);
+        assertEquals(8, MyMain.binaryToDecimal("1000"), "The decimal value of \"1000\" should be: " + 8);
     }
 
     @Test
-    public void testFactorial() {
-        assertEquals(120.0, MyMain.factorial(5), 0.01, "The factorial of 5 should be: 120.0");
-        assertEquals(3628800.0, MyMain.factorial(10), 0.01, "The factorial of 10 should be: 3628800.0");
-        assertEquals(1.0, MyMain.factorial(1), 0.01, "The factorial of 1 should be: 1.0");
-        assertEquals(1.0, MyMain.factorial(0), 0.01, "The factorial of 0 should be: 1.0");
+    public void testHard() {
+        assertEquals(0, MyMain.binaryToDecimal("0"), "The decimal value of \"0\" should be: " + 0);
+        assertEquals(170, MyMain.binaryToDecimal("10101010"), "The decimal value of \"10101010\" should be: " + 170);
+        assertEquals(1023, MyMain.binaryToDecimal("1111111111"), "The decimal value of \"1111111111\" should be: " + 1023);
+        assertEquals(65, MyMain.binaryToDecimal("1000001"), "The decimal value of \"1000001\" should be: " + 65);
     }
-
-    @Test
-    public void testE() {
-        assertEquals(Math.E, MyMain.calculateE(), 0.01, "The value of e should be: " + Math.E);
-    }
-
-
 }
