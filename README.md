@@ -1,4 +1,4 @@
-# Decimal to Binary Assignment
+# Decimal and Binary Assignment
 
 In this assignment, you will be writing two methods to convert between decimal and binary numbers. 
 
