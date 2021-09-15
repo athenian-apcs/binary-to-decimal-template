@@ -16,7 +16,7 @@ Type in a number in binary format:
 That is equal to the decimal value: 1023
 Type in a number in decimal format: 
 13
-That is equal to the binary value: 101
+That is equal to the binary value: 1101
 ```
 
 <br />
